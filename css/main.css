@@ -1,0 +1,151 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	overflow-x: hidden;
+	margin: 0;
+	font-family: 'Gilroy';
+	font-weight: 200;
+}
+.wrapper {
+	overflow: hidden;
+}
+.error-page {
+	min-height: 100vh;
+	padding-top: 328px;
+	padding-bottom: 100px;
+	font-family: 'Gilroy';
+	background: #000;
+	color: #fff;
+	background-image: url(../img/bg_main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	font-weight: 200;
+	text-align: center;
+}
+.error-page__image {
+	width: 442px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: -25px;
+	position: absolute;
+	transform-origin: 50% 0;
+	animation: moveIt 3.5s ease-in-out infinite;
+}
+.error-page__image img {
+	max-width: 100%;
+	height: auto;
+}
+
+@keyframes moveIt {
+	0%, 100% {
+	  transform: rotate(20deg);
+	}
+	50% {
+	  transform: rotate(-20deg);
+	}
+  }
+.error-title {
+	font-size: 400px;
+	margin-bottom: 15px;
+	line-height: 92%;
+	font-weight: 700;
+	color: #fff;
+}
+.error-title span {
+	color: #3044ff;
+}
+.error-descr {
+	font-size: 20px;
+	line-height: 119%;
+	font-weight: 200;
+}
+.header-error {
+	padding: 66px 144px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-family: 'Gilroy';
+	z-index: 4;
+}
+.logo-main {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 144%;
+	color: #efefef;
+	text-decoration: none;
+}
+.logo-main span {
+	color: #3045ff;
+}
+@media only screen and (max-width : 1600px) {
+	.error-title {
+		font-size: 335px;
+	}
+	.error-descr {
+		font-size: 18px;
+	}
+	.error-page {
+		padding-top: 220px;
+		padding-bottom: 60px;
+	}
+	.error-page__image {
+		width: 320px;
+	}
+	.logo-main {
+		font-size: 26px;
+	}
+	.header-error {
+		padding: 45px 100px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.error-title {
+		font-size: 300px;
+	}
+	.error-descr {
+		font-size: 16px;
+	}
+	.error-page {
+		padding-top: 150px;
+		padding-bottom: 60px;
+	}
+	.error-page__image {
+		width: 280px;
+	}
+	.logo-main {
+		font-size: 23px;
+	}
+	.header-error {
+		padding: 25px 60px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.error-title {
+		font-size: 180px;
+	}
+	.error-descr {
+		font-size: 12px;
+	}
+	.error-page {
+		padding-top: 150px;
+		padding-bottom: 60px;
+	}
+	.error-page__image {
+		width: 220px;
+	}
+	.logo-main {
+		font-size: 21px;
+	}
+	.header-error {
+		padding: 15px 15px;
+	}
+}
